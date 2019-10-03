@@ -102,7 +102,7 @@ macro_rules! scope {
 /// Perform one-time per-thread initialization for `coz`.
 ///
 /// This may not be necessary to call, but for good measure it's recommended to
-/// call once per thread in your application near where the thred starts.
+/// call once per thread in your application near where the thread starts.
 /// If you run into issues with segfaults related to SIGPROF handlers this may
 /// help fix the issue since it installs a bigger stack earlier on in the
 /// process.
