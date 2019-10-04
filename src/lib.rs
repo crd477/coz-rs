@@ -98,7 +98,7 @@ macro_rules! scope {
         let _coz_scope_guard = $crate::Guard::new(&END_COUNTER);
     };
 }
-
+#[cfg(not(windows))]
 /// Perform one-time per-thread initialization for `coz`.
 ///
 /// This may not be necessary to call, but for good measure it's recommended to
